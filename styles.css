@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e09, #d0e);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+    margin-bottom: 20px; /* Added margin to space out the share button */
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 12px 20px;
+    width: 25%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    margin-bottom: 12px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Share Button Styling */
+.share-btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px; /* Match container width */
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-align: center;
+}
+
+.share-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
